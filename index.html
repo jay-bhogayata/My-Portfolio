@@ -1,357 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/input.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c1f89e671.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/input.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <script src="https://kit.fontawesome.com/4c1f89e671.js" crossorigin="anonymous"></script>
     <title>JayBhogayata</title>
-</head>
+  </head>
 
-<body class="bg-stone-900">
+  <body class="bg-stone-900">
     <!-- navbar start -->
-    <div class="mt-0">
-        <nav class="text-gray-400  font-mono body-font w-full fixed">
-            <ul class="menu">
+    
+      <header>
+        <nav
+          class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black  fixed font-mono "
+        >
+          <div>
+            <a href="#" >
+              <span class="text-blue-600 font-semibold lg:ml-9 text-2xl "> Jay's portfolio </span>
+            </a>
+          </div>
+          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#fff"
+            
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
 
-                <li class="logo lg:ml-9 text-xl"><a href="#">Jay's portfolio</a></li>
-                <li class="item text-xl"><a href="#project">Projects</a></li>
-                <li class="item text-xl"><a href="#Skills">skills</a></li>
-                <li class="item text-xl"><a href="#contect">contect</a></li>
-                <li class="item text-xl"><a href="https://blog.codewithjay.co.in/" target="_blank">blog</a></li>
-                <li class="item text-xl lg:mr-9"><a href="#">certifications</a></li>
-
-
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-
+          <div
+            class="hidden w-full md:flex md:items-center md:w-auto"
+            id="menu"
+          >
+            <ul
+              class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0"
+            >
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400  text-xl" href="#project"
+                  >project</a
+                >
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400 text-xl" href="#Skills"
+                  >skills</a
+                >
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400 text-xl" href="https://blog.codewithjay.co.in/" target="_blank"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400 text-xl" href="#certf"
+                  >certifications</a
+                >
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400 text-xl" href="#contect"
+                  >contect me</a
+                >
+              </li>              
             </ul>
+          </div>
         </nav>
-    </div>
+      </header>
+
+      
+
+    
+  
     <!-- navbar end -->
 
-
     <!-- hero section start -->
-    <section class="text-gray-400 bg-stone-900 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1
-                    class="title-font sm:text-4xl mb-4  text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 lg:ml-9">
-                    Hi ,
-
-                    I'm Jay
-                    <br class="m-10">
-                    Fullstack Web Developer.
-                </h1>
-                <p class="mb-8 leading-relaxed lg:ml-9">Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-                    air
-                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
-                    authentic tumeric truffaut hexagon try-hard chambray.</p>
-
-            </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 lg:mr-9">
-                <img class="object-cover object-center rounded-2xl " alt="hero" src="https://res.cloudinary.com/dniyra1ql/image/upload/v1648696173/prog_xf72fr.png">
-            </div>
+    <section>
+      <section class="text-gray-400 bg-stone-900 body-font">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 lg:ml-9"
+            >
+              Hi , I'm Jay
+              <br class="m-10" />
+              Fullstack Web Developer.
+            </h1>
+            <p class="mb-8 leading-relaxed lg:ml-9">
+              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
+              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
+              park mlkshk tote bag selvage hot chicken authentic tumeric
+              truffaut hexagon try-hard chambray.
+            </p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 lg:mr-9">
+            <img
+              class="object-cover object-center rounded-2xl"
+              alt="hero"
+              src="/images/coder.png"
+            />
+          </div>
         </div>
+      </section>
     </section>
     <!-- hero sectio end -->
 
     <!-- Projects section start -->
-    <h1 id="project"
-        class="title-font sm:text-4xl mb-4  text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-blue-500 text-5xl font-extrabold sm:ml-1 lg:ml-9 justify-center flex">
-        Projects
+    <h1
+      id="project"
+      class="title-font sm:text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-blue-500 text-5xl font-extrabold sm:ml-1 lg:ml-9 justify-center flex"
+    >
+      Projects
     </h1>
 
     <section class="text-gray-400 bg-stone-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col">
-
-
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col"></div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="/images/proj1.png"
+              />
             </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="/images/proj1.png">
-                    </div>
-                    <h2 class="text-2xl font-medium title-font text-white mt-5">Ytubers - Marketplace for youtuber</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoindxgoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24" href="#">Live Project</a>
+            <h2 class="text-2xl font-medium title-font text-white mt-5">
+              Ytubers - Marketplace for youtuber
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Swag shoindxgoitch literally meditation subway tile tumblr
+              cold-pressed. Gastropub street art beard dreamcatcher neutra,
+              ethical XOXO lumbersexual.
+            </p>
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
+              href="#"
+              >Live Project</a
+            >
 
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3"
-                        href="https://github.com/jay-bhogayata/Tuber">Github Repo </a>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="/images/proj2.png">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-white mt-5">Expending cards</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoindxigoitch literally meditation subway tile
-                        tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.
-                    </p>
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
-                        href="https://jay-bhogayata.github.io/expending-card/">Live Project</a>
-
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3"
-                        href="https://github.com/jay-bhogayata/expending-card">Github Repo </a>
-
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="/images/proj3.png">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-white mt-5">simple login and signup page</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoindegoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                    <a class="text-indigo-400  text-xl inline-flex items-center mt-3 mr-24"
-                        href="https://simple-website-7gskcdsny-jay-bhogayata.vercel.app/">Live Project</a>
-
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3"
-                        href="https://github.com/jay-bhogayata/LearnCode">Github Repo </a>
-                </div>
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3"
+              href="https://github.com/jay-bhogayata/Tuber"
+              >Github Repo
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="/images/proj2.png"
+              />
             </div>
+            <h2 class="text-xl font-medium title-font text-white mt-5">
+              Expending cards
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Swag shoindxigoitch literally meditation subway tile tumblr
+              cold-pressed. Gastropub street art beard dreamcatcher neutra,
+              ethical XOXO lumbersexual.
+            </p>
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
+              href="https://jay-bhogayata.github.io/expending-card/"
+              >Live Project</a
+            >
+
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3"
+              href="https://github.com/jay-bhogayata/expending-card"
+              >Github Repo
+            </a>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="/images/proj3.png"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-white mt-5">
+              simple login and signup page
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Swag shoindegoitch literally meditation subway tile tumblr
+              cold-pressed. Gastropub street art beard dreamcatcher neutra,
+              ethical XOXO lumbersexual.
+            </p>
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
+              href="https://simple-website-7gskcdsny-jay-bhogayata.vercel.app/"
+              >Live Project</a
+            >
+
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3"
+              href="https://github.com/jay-bhogayata/LearnCode"
+              >Github Repo
+            </a>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- Projects section end -->
 
-
-
-
-
-
     <!-- skills section start -->
     <h1
-        class="title-font sm:text-4xl mb-4  text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 lg:ml-9 justify-center flex ">
-        My Skills
-
+      class="title-font sm:text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 lg:ml-9 justify-center flex"
+    >
+      My Skills
     </h1>
     <section class="text-gray-400 bg-stone-900 body-font">
-        <div class="container lg:px-5 py-12 lg:mx-auto" id="Skills">
-            <div class="flex flex-wrap lg:-m-4 text-center  mt-3  justify-center ">
+      <div class="container lg:px-5 py-12 lg:mx-auto" id="Skills">
+        <div class="flex flex-wrap lg:-m-4 text-center mt-3 justify-center">
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-34">
+            <img src="/images/html.png" class="w-24" alt="node_js" />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img src="/images/css.png" class="w-24" alt="node_js" />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img src="/images/js.png" class="w-24" alt="node_js" />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img
+              src="/images/icons8-python-96.png"
+              class="w-24"
+              alt="node_js"
+            />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img src="/images/django.png" class="w-24" alt="node_js" />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img src="/images/git.png" class="w-24" alt="node_js" />
+          </div>
 
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-34 ">
-                    <img src="/images/html.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
-                    <img src="/images/css.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
-                    <img src="/images/js.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
-                    <img src="/images/icons8-python-96.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12  md:w-1/4 lg:ml-9">
-                    <img src="/images/django.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12  md:w-1/4 lg:ml-9">
-                    <img src="/images/git.png" class="w-24" alt="node_js">
-
-                </div>
-
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4  lg:ml-9">
-                    <img src="/images/postgresql.png" class="w-24" alt="node_js">
-
-                </div>
-                <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4  lg:ml-9 mt-5">
-                    <img src="/images/tailwind.png" class="w-24" alt="node_js">
-
-                </div>
-
-
-            </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9">
+            <img src="/images/postgresql.png" class="w-24" alt="node_js" />
+          </div>
+          <div class="p-4 sm:w-1/12 lg:w-1/12 md:w-1/4 lg:ml-9 mt-5">
+            <img src="/images/tailwind.png" class="w-24" alt="node_js" />
+          </div>
         </div>
+      </div>
     </section>
     <!-- skills section end -->
 
-    
     <!-- certifications start -->
     <h1
-    class="title-font sm:text-4xl mb-2  text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1  justify-center flex ">
-    certificates</h1>
-    
+      class="title-font sm:text-4xl mb-2 text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 justify-center flex"
+    >
+      certificates
+    </h1>
 
-    <section class="text-gray-400 bg-stone-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4  justify-center">
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="/images/djangocerti.png">
-                    </div>
-                    <h2 class="text-2xl font-medium title-font text-white mt-5">django Fullstack Developer freelance ready</h2>
-                    
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24" href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/86241/5365810_86241.pdf?1647616062">view certifications</a>
-
-                    
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="/images/htmlcsscerti.png">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-white mt-5">html and css for morden web Developement</h2>
-                    <a class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
-                        href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/98072/5365810_98072.pdf?1637410985">view certifications</a>
-
-                   
-                </div>
-                
+    <section class="text-gray-400 bg-stone-900 body-font" id="certf">
+      <div class="container px-5 pt-24 mx-auto">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 justify-center">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="/images/djangocerti.png"
+              />
             </div>
-        </div>
-    </section>
+            <h2 class="text-2xl font-medium title-font text-white mt-5">
+              django Fullstack Developer freelance ready
+            </h2>
 
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
+              href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/86241/5365810_86241.pdf?1647616062"
+              >view certifications</a
+            >
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="/images/htmlcsscerti.png"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-white mt-5">
+              html and css for morden web Developement
+            </h2>
+            <a
+              class="text-indigo-400 text-xl inline-flex items-center mt-3 mr-24"
+              href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/98072/5365810_98072.pdf?1637410985"
+              >view certifications</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- certifications end -->
 
-
     <!-- contect me start -->
 
-    <form class="flex w-full max-w-sm space-x-3  m-auto " id="contect">
-        <div class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-stone-900 ">
-            <div class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
-                <h1
-                    class="title-font sm:text-4xl mb-4  text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1  justify-center flex ">
-                    Contact me</h1>
-            </div>
-            <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
-                <div class="col-span-2 lg:col-span-1">
-                    <div class=" relative ">
-                        <input type="text" id="contact-form-name"
-                            class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="Name" />
-                    </div>
-                </div>
-                <div class="col-span-2 lg:col-span-1">
-                    <div class=" relative ">
-                        <input type="text" id="contact-form-email"
-                            class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="email" />
-                    </div>
-                </div>
-                <div class="col-span-2">
-                    <label class="text-gray-700" for="name">
-                        <textarea
-                            class="flex-1 appearance-none border  w-full py-2 px-4 bg-white text-stone-700 placeholder-stone-900 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40">
-                            </textarea>
-                    </label>
-                </div>
-                <div class="col-span-2 text-right">
-                    <button type="submit"
-                        class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                        Send
-                    </button>
-                </div>
-            </div>
+    <form class="flex w-full max-w-sm space-x-3 m-auto" id="contect">
+      <div
+        class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-stone-900"
+      >
+        <div
+          class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white"
+        >
+          <h1
+            class="title-font sm:text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-orange-300 to-purple-500 text-5xl font-extrabold sm:ml-1 justify-center flex"
+          >
+            Contact me
+          </h1>
         </div>
+        <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+          <div class="col-span-2 lg:col-span-1">
+            <div class="relative">
+              <input
+                type="text"
+                id="contact-form-name"
+                class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="Name"
+              />
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1">
+            <div class="relative">
+              <input
+                type="text"
+                id="contact-form-email"
+                class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="email"
+              />
+            </div>
+          </div>
+          <div class="col-span-2">
+            <label class="text-gray-700" for="name">
+              <textarea
+                class="flex-1 appearance-none border w-full py-2 px-4 bg-white text-stone-700 placeholder-stone-900 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                id="comment"
+                placeholder="Enter your comment"
+                name="comment"
+                rows="5"
+                cols="40"
+              >
+              </textarea>
+            </label>
+          </div>
+          <div class="col-span-2 text-right">
+            <button
+              type="submit"
+              class="py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
     </form>
 
     <!-- contect me end -->
 
-
-
-
     <!-- footer start -->
 
-    <footer class="text-center text-black bg-slate-500">
-        <div class="container pt-5 flex justify-center ">
-            <div class="flex justify-center mb-5">
+    <footer class="text-center text-black bg-white">
+      <div class="container pt-5 flex justify-center">
+        <div class="flex justify-center mb-5">
+          <a
+            href=" https://twitter.com/jay_bhogayata"
+            class="mr-5 text-gray-800"
+          >
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </a>
 
-                <a href=" https://twitter.com/jay_bhogayata" class="mr-5 text-gray-800">
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-                </a>
+          <a
+            href="https://www.instagram.com/bhogayata_jay07/
+            "
+            class="mr-5 text-gray-800"
+          >
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jay-bhogayata-b553a2221/"
+            class="mr-5 text-gray-800"
+          >
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
 
-                <a href="https://www.instagram.com/bhogayata_jay07/
-            " class="mr-5 text-gray-800">
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jay-bhogayata-b553a2221/" class="mr-5 text-gray-800">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                </a>
-
-                <a href="https://github.com/jay-bhogayata" class="mr-5 text-gray-800">
-                    <i class="fa-brands fa-github-square fa-2x"></i>
-                </a>
-                <a href="https://blog.codewithjay.co.in/" class="mr-5 text-gray-800">
-                    <i class="fa-brands fa-hashnode fa-2x"></i>
-                </a>
-            </div>
-
+          <a href="https://github.com/jay-bhogayata" class="mr-5 text-gray-800">
+            <i class="fa-brands fa-github-square fa-2x"></i>
+          </a>
+          <a href="https://blog.codewithjay.co.in/" class="mr-5 text-gray-800">
+            <i class="fa-brands fa-hashnode fa-2x"></i>
+          </a>
         </div>
-        <div class="text-center pt-0.5  font-light flex items-center justify-center">
-            &copy; 2022 All rights reserved | Jay Bhogayata
-        </div>
-
+      </div>
+      <div
+        class="text-center pt-0.5 font-light flex items-center justify-center"
+      >
+        &copy; 2022 All rights reserved | Jay Bhogayata
+      </div>
     </footer>
     <!-- footer end -->
-
-
-
-
-
-
     <script>
-        const toggle = document.querySelector(".toggle");
-        const menu = document.querySelector(".menu");
-        const items = document.querySelectorAll(".item");
-
-        /* Toggle mobile menu */
-        function toggleMenu() {
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-            } else {
-                menu.classList.add("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-            }
-        }
-
-        /* Activate Submenu */
-        function toggleItem() {
-            if (this.classList.contains("submenu-active")) {
-                this.classList.remove("submenu-active");
-            } else if (menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-                this.classList.add("submenu-active");
-            } else {
-                this.classList.add("submenu-active");
-            }
-        }
-
-        /* Close Submenu From Anywhere */
-        function closeSubmenu(e) {
-            if (menu.querySelector(".submenu-active")) {
-                let isClickInside = menu
-                    .querySelector(".submenu-active")
-                    .contains(e.target);
-
-                if (!isClickInside && menu.querySelector(".submenu-active")) {
-                    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-                }
-            }
-        }
-        /* Event Listeners */
-        toggle.addEventListener("click", toggleMenu, false);
-        for (let item of items) {
-            if (item.querySelector(".submenu")) {
-                item.addEventListener("click", toggleItem, false);
-            }
-            item.addEventListener("keypress", toggleItem, false);
-        }
-        document.addEventListener("click", closeSubmenu, false);
-    </script>
-</body>
-
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+    
+    
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    
+</script>
+  
+  </body>
 </html>
